@@ -30,16 +30,20 @@ public class Car
     	Garage g = new Garage();
     	Car car = new Car(g);
         car.accelerate();
-        slowDown();
-        moveDown();
-        accelerate();
+        car.slowDown();
+        car.moveDown();
+        car.accelerate();
         car.printGarage();
 //        turnRight();
 //        turnHeadlightsOn();
 //        turnHeadlightsOff();
     }    
 
-    /**
+    private void printGarage() {
+		System.out.println(theGarage);
+		
+	}
+	/**
      * Accelerate the car
      * @throws InterruptedException 
      */
